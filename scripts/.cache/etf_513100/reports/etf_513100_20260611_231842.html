@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纳指ETF (513100) 深度分析报告</title>
+<style>
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-card: #1c2333;
+    --border: #30363d;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --accent-green: #3fb950;
+    --accent-red: #f85149;
+    --accent-yellow: #d29922;
+    --accent-blue: #58a6ff;
+    --accent-purple: #bc8cff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.header h1 { font-size: 28px; margin-bottom: 8px; }
+.header .subtitle { color: var(--text-secondary); font-size: 14px; }
+.header .badge { 
+    display: inline-block; padding: 4px 12px; border-radius: 20px; 
+    font-size: 12px; font-weight: 600; margin-left: 8px;
+}
+.badge-green { background: rgba(63,185,80,0.15); color: var(--accent-green); }
+.badge-red { background: rgba(248,81,73,0.15); color: var(--accent-red); }
+.badge-yellow { background: rgba(210,153,34,0.15); color: var(--accent-yellow); }
+
+/* Cards */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.card h2 { 
+    font-size: 18px; margin-bottom: 16px; 
+    padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: var(--text-secondary); font-weight: 600; font-size: 13px; text-transform: uppercase; }
+td { font-size: 14px; }
+
+/* Score display */
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.score-item {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Risk radar placeholder */
+.radar-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Alert boxes */
+.alert {
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-left: 4px solid;
+}
+.alert-critical { background: rgba(248,81,73,0.1); border-color: var(--accent-red); }
+.alert-warning { background: rgba(210,153,34,0.1); border-color: var(--accent-yellow); }
+.alert-info { background: rgba(88,166,255,0.1); border-color: var(--accent-blue); }
+
+/* Decision matrix */
+.decision-table td:first-child { font-weight: 600; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 12px;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    margin-top: 32px;
+}
+
+/* Print styles */
+@media print {
+    body { background: white; color: black; }
+    .card { border: 1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+    <h1>纳指ETF (513100) <span class="badge badge-yellow">评级: C+</span></h1>
+    <p class="subtitle">
+        基金类型: QDII-ETF | 
+        数据截止: 2026-06-11 23:18 | 
+        数据来源: akshare + CNBC + web_search
+    </p>
+</div>
+<div class="card">
+    <h2>📊 综合评分卡</h2>
+    <p style="margin-bottom:16px;font-size:24px;font-weight:700;">总分: 5.4/10 — 评级: C+</p>
+    <div class="score-grid"><div class="score-item">
+            <div>
+                <strong>🔴 明显高估</strong><br>
+                <small style="color:var(--text-secondary)">溢价7.6%</small>
+            </div>
+            <div class="score-value" style="color:#f85149">3.5</div>
+        </div></div>
+    
+    <h3 style='margin-top:16px'>🚨 风险警报</h3><div class="alert alert-critical">⚠️ ⚠️ 溢价7.6%，性价比偏低</div>
+</div>
+<div class="card">
+    <h2>📡 实时行情快照</h2>
+    <table><tr><td>价格</td><td>¥1.8500</td></tr><tr><td>净值(IOPV)</td><td>¥1.7200</td></tr><tr><td>折溢价率</td><td>-7.56%</td></tr><tr><td>今日涨跌</td><td>0.54%</td></tr><tr><td>成交量</td><td>50万手</td></tr><tr><td>成交额</td><td>9.00亿</td></tr><tr><td>流通市值</td><td>30.0亿</td></tr></table>
+    
+</div>
+<div class="card">
+    <h2>💰 溢价率深度分析</h2>
+    <div class="alert alert-warning">
+        ⚠️ 
+        当前溢价7.6%。
+        每投入1万元，有756元是纯泡沫
+    </div>
+</div>
+<div class="card">
+    <h2>📈 历史业绩表现</h2>
+    <table><tr><td>近1个月</td><td style="color:#3fb950">+2.10%</td></tr><tr><td>近3个月</td><td style="color:#3fb950">+8.50%</td></tr><tr><td>近6个月</td><td style="color:#3fb950">+15.20%</td></tr><tr><td>近1年</td><td style="color:#3fb950">+28.50%</td></tr><tr><td>今年以来</td><td style="color:#3fb950">+15.20%</td></tr></table>
+    <h3 style="margin-top:16px">风险指标</h3>
+    <table><tr><td>年化波动率</td><td>22.0</td></tr><tr><td>Sharpe比率</td><td>1.3</td></tr><tr><td>最大回撤</td><td>-22.0</td></tr></table>
+</div>
+<div class="card">
+    <h2>🔄 同类产品横向对比 (10个竞品)</h2>
+    <table><tr><th>ETF</th><th>价格</th><th>折溢价率</th><th>流通市值</th></tr>
+    <tr><td>⭐513100 纳指ETF</td><td>1.85</td><td>-7.56% </td><td>30.0亿</td></tr></table>
+</div>
+<div class="card">
+    <h2>🎯 风险雷达评估</h2>
+    <p style="font-size:18px;font-weight:600;margin-bottom:12px;">🟢 低风险</p>
+    
+</div>
+<div class="card">
+    <h2>🔍 ETF杀猪盘检测</h2>
+    <p style="font-size:16px;font-weight:600;margin-bottom:12px;">🟢 无明显陷阱信号</p>
+    
+</div>
+<div class="card">
+    <h2>📅 定投策略分析</h2>
+    <p style="margin-bottom:16px;">🟡 建议等待溢价回落后再开始定投</p>
+    
+    <h3>推荐频率</h3>
+    <p><strong>月度定投</strong>: 溢价过高</p>
+    
+    <h3 style="margin-top:16px">止盈策略</h3>
+    <table><tr><th>级别</th><th>目标收益</th><th>操作建议</th></tr><tr><td>🟢</td><td>20.0%</td><td>减仓30%</td></tr></table>
+    
+    <h3 style="margin-top:16px">止损策略</h3>
+    <table><tr><th>级别</th><th>阈值</th><th>操作建议</th></tr><tr><td>🔴</td><td>-17.6%</td><td>强制止损</td></tr></table>
+</div>
+<div class="card"><h2>📋 投资决策矩阵</h2><p>请结合以上数据自行判断，或由分析师生成具体建议。</p></div>
+<div class="footer">
+    <p>免责声明：以上分析基于公开数据，不构成投资建议。ETF投资存在市场风险、汇率风险（QDII）、溢价波动风险等。</p>
+    <p>生成时间: 2026-06-11 23:18:42 | 由 Hermes ETF Analysis v2.0 自动生成</p>
+</div>
+</div>
+
+<script>
+// Embedded data for potential interactivity
+const analysisData = {"code": "513100", "name": "纳指ETF", "fund_type": "QDII-ETF", "grade": "C+", "weighted_total": 5.4, "scores": {"A1_premium": {"score": 3.5, "level": "🔴 明显高估", "explanation": "溢价7.6%"}}, "red_flags": ["⚠️ 溢价7.6%，性价比偏低"], "realtime": {"status": "ok", "最新价": 1.85, "IOPV实时估值": 1.72, "基金折价率": -7.56, "涨跌幅": 0.54, "成交量": 500000, "成交额": 900000000.0, "流通市值": 3000000000.0}, "history": {"status": "ok", "ret_1m": 2.1, "ret_3m": 8.5, "ret_6m": 15.2, "ret_1y": 28.5, "YTD_return": 15.2, "annualized_volatility": 22.0, "sharpe_ratio": 1.3, "max_drawdown_ever": -22.0}, "competitors": {"status": "ok", "count": 10, "competitors": [{"代码": "513100", "名称": "纳指ETF", "最新价": 1.85, "基金折价率": -7.56, "流通市值": 3000000000.0, "is_target": true}]}, "risk_radar": {"risks": {}, "overall_risk_level": "🟢 低风险"}, "trap_detection": {"traps": [], "overall_verdict": "🟢 无明显陷阱信号"}, "sip_strategy": {"take_profit": [{"level": "🟢", "target_return": 20.0, "action": "减仓30%"}], "stop_loss": [{"level": "🔴", "threshold": -17.6, "action": "强制止损"}], "frequency_recommendation": {"recommended": "月度定投", "reasoning": "溢价过高"}, "overall_sip_verdict": "🟡 建议等待溢价回落后再开始定投"}};
+console.log('ETF Analysis Report loaded', new Date().toISOString());
+</script>
+</body>
+</html>
